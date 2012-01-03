@@ -8,7 +8,7 @@ namespace TinyProj
 {
     public static class Tiny
     {
-        private const string _key = "QBkDvNcVaIwMp5iOmnJ0hby6l8rTtjG3PoS1ZYe9WLAXHzCdgRsExK27FqU4fu";
+        private const string _key = "** insert key here **";
         public static string ToTiny(int ID)
         {
             List<string> HexN = new List<string>();
