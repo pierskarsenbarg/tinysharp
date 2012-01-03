@@ -16,6 +16,11 @@ to this:
 
     private const string _key = "HlmsFfTSNvugBbthin85IqGEDX3k6CVpLz1UwMQxWOYoZ7K9aRJjeAdPc24y0r";
 
+## Acknowledgements
+
+* [Kyle Bragger](https://github.com/kylebragger/tiny)
+* Jacob DeHart (original PHP code)
+
 ## Licence
 
 This code is released under the [MIT licence](http://www.opensource.org/licenses/mit-license.php). There is a copy of the licence in the licence.txt file contained in the project.
