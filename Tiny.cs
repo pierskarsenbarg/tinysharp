@@ -8,7 +8,7 @@ namespace TinyProj
 {
     public static class Tiny
     {
-        private const string _key = "**insert key here**";
+        private const string _key = "QBkDvNcVaIwMp5iOmnJ0hby6l8rTtjG3PoS1ZYe9WLAXHzCdgRsExK27FqU4fu";
         public static string ToTiny(int ID)
         {
             List<string> HexN = new List<string>();
@@ -50,13 +50,10 @@ namespace TinyProj
         public static string GenerateSet()
         {
             List<string> TinyList = new List<string>();
-            for (int i = 65; i < 91; i++)
+            for (int i = 65;i<=122;i++)
             {
-                TinyList.Add(Convert.ToChar(i).ToString());
-            }
-            for (int i = 97; i < 123; i++)
-            {
-                TinyList.Add(Convert.ToChar(i).ToString());
+                if (i < 91 || i > 96)
+                    TinyList.Add(Convert.ToChar(i).ToString());
             }
             for (int i = 0; i <= 9; i++)
             {
