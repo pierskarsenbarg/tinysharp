@@ -41,7 +41,6 @@ namespace TinyProj
             int N = 0;
             for (int i = 0;i<hashlen;i++)
             {
-                // N += (position in _key of hash[i]) to the power of (radix, whatever)
                 N += _key.IndexOf(hashchararray[i]) * (int)Math.Pow(radix,(hashlen-i-1));
             }
             return N;
