@@ -1,7 +1,4 @@
-﻿
-#About
-
-This is an implementation of [Kyle Bragger](http://kylewritescode.com/)'s tiny code in C#.
+﻿This is an implementation of [Kyle Bragger](http://kylewritescode.com/)'s tiny code in C#.
 
 # Usage
 
