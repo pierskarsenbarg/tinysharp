@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Security.Cryptography;
 
-namespace TinyProj
+namespace TinySharp
 {
     /// <summary>
     /// A reversable base62 ID obfuscater
