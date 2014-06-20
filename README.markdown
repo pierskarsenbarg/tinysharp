@@ -1,4 +1,6 @@
 ﻿This is an implementation of [Kyle Bragger](http://kylewritescode.com/)'s tiny code in C#.
+﻿
+﻿[![Build status](https://ci.appveyor.com/api/projects/status/rupq5t79epb8yi0i)](https://ci.appveyor.com/project/pierskarsenbarg/tinysharp)
 
 ###Usage
 
