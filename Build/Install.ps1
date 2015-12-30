@@ -1,7 +1,5 @@
 ﻿param($installPath, $toolsPath, $package, $project)
 
-Write-Host "installing my package"
-
 function GenerateKey()
 {
     [char[]] $keyArray = @()
@@ -19,7 +17,7 @@ function GenerateKey()
 
     $rndArray = $keyArray | Sort-Object {Get-Random}
 
-    return [string]$rndArray
+    return [string]$($rndArray)
 }
 
 
@@ -40,6 +38,8 @@ function UpdateCurrentProjectsConfigFile([string]$name)
 
 function UpdateConfigFile([string]$configFilePath, [string]$name)
 {
+Write-Host "configFilePath: " 
+Write-Host $configFilePath
 	$references = (Select-String $configFilePath -pattern "TinySharpKey").Matches.Count
 
 	If( $references -ne 0)
@@ -73,4 +73,5 @@ function UpdateConfigFile([string]$configFilePath, [string]$name)
 }
 
 $key = GenerateKey
-UpdateCurrentProjectsConfigFile $key
+Write-Host $key
+#UpdateCurrentProjectsConfigFile $key

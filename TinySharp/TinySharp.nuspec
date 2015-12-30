@@ -1,15 +1,19 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <id>tinysharp</id>
+    <version>1.0.8</version>
+    <title>TinySharp</title>
+    <authors>Piers Karsenbarg</authors>
+    <owners>Piers Karsenbarg</owners>
     <licenseUrl>https://github.com/pierskarsenbarg/tinysharp/blob/master/LICENCE</licenseUrl>
     <projectUrl>https://github.com/pierskarsenbarg/tinysharp</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Library for creating bit.ly style hashes</description>
     <copyright>Copyright 2015</copyright>
   </metadata>
+  <files>
+    <file src="..\Build\Install.ps1" target="tools"/>
+    <file src="bin\Release\Tiny.dll" target="lib/Net45" />
+  </files>
 </package>

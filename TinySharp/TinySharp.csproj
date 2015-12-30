@@ -8,8 +8,8 @@
     <ProjectGuid>{C3167600-6CAB-4EEA-87B2-9EF7AA3FA0D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tiny</RootNamespace>
-    <AssemblyName>Tiny</AssemblyName>
+    <RootNamespace>TinySharp</RootNamespace>
+    <AssemblyName>TinySharp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
