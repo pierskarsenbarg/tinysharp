@@ -84,3 +84,4 @@ UpgradeLog*.XML
 
 **/.vs
 **/packages
+*.nupkg
