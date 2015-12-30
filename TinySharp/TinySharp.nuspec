@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>tinysharp</id>
-    <version>1.0.8</version>
+    <id>TinySharp</id>
+    <version>1.0.0</version>
     <title>TinySharp</title>
     <authors>Piers Karsenbarg</authors>
     <owners>Piers Karsenbarg</owners>
-    <licenseUrl>https://github.com/pierskarsenbarg/tinysharp/blob/master/LICENCE</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/pierskarsenbarg/tinysharp/master/LICENCE</licenseUrl>
     <projectUrl>https://github.com/pierskarsenbarg/tinysharp</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Library for creating bit.ly style hashes</description>
@@ -14,6 +14,6 @@
   </metadata>
   <files>
     <file src="..\Build\Install.ps1" target="tools"/>
-    <file src="bin\Release\Tiny.dll" target="lib/Net45" />
+    <file src="bin\Release\TinySharp.dll" target="lib/Net45" />
   </files>
 </package>
