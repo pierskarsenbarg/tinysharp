@@ -23,7 +23,7 @@ function UpdateCurrentProjectsConfigFile()
 
 function UpdateConfigFile($configFilePath)
 {
-    $tinyKey = GenerateKey
+    
     $xml = New-Object XML
     $xml.Load($configFilePath)
 	$appSettingNode = $xml.SelectSingleNode("configuration/appSettings/add[@key = 'TinySharpKey']")
@@ -42,6 +42,8 @@ function UpdateConfigFile($configFilePath)
         $appSettingsNode = $xml.CreateElement("appSettings")
         $xml.DocumentElement.AppendChild($appSettingsNode)
     }
+
+    $tinyKey = GenerateKey
 
     if ($tinyKey -ne "")
     {    
