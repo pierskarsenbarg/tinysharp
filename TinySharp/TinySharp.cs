@@ -6,9 +6,6 @@ using System.Security.Cryptography;
 
 namespace TinySharp
 {
-    /// <summary>
-    /// A reversable base62 ID obfuscater
-    /// </summary>
     public class Tiny
     {
         private readonly string _key;
