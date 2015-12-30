@@ -28,21 +28,21 @@ namespace TinySharp
         /// </summary>
         /// <param name="id">ID to be converted</param>
         /// <returns>Hash of ID</returns>
-        public string ToTiny(int id)
+        public string ToHash(int id)
         {
-            List<string> hexN = new List<string>();
+            var hexN = new List<char>();
             int radix = _key.Length;
-            char[] set = _key.ToCharArray();
+            char[] characterSet = _key.ToCharArray();
             while(true)
             {
                 int r = id % radix;
                 if (hexN.Count == 0)
                 {
-                    hexN.Add(set[r].ToString());
+                    hexN.Add(characterSet[r]);
                 }
                 else
                 {
-                    hexN.Insert(0,set[r].ToString());
+                    hexN.Insert(0, characterSet[r]);
                 }
                 id = (id-r)/radix;
                 if (id == 0)
@@ -59,7 +59,7 @@ namespace TinySharp
         /// </summary>
         /// <param name="hash">Hash to be converted</param>
         /// <returns>ID</returns>
-        public int ReverseTiny(string hash)
+        public int ReverseHash(string hash)
         {
             int radix = _key.Length;
             int hashlen = hash.Length;
@@ -72,10 +72,14 @@ namespace TinySharp
             return N;
         }
 
-        public static string GenerateSet()
+        /// <summary>
+        /// Method for generating a key
+        /// </summary>
+        /// <returns></returns>
+        public static string GenerateKey()
         {
             var tinyList = new List<string>();
-            for (int i = 65;i<=122;i++)
+            for (int i = 65; i <= 122; i++)
             {
                 if (i < 91 || i > 96)
                 {
