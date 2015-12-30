@@ -2,22 +2,7 @@
 
 function GenerateKey()
 {
-    [char[]] $keyArray = @()
-    for($i = 65;$i -le 122;$i++) 
-    {
-        if($i -lt 91 -or $i -gt 96)  
-        {
-            $keyArray += [char]$i
-        }  
-    }
-    for($i = 0; $i -le 9; $i++)
-    {
-        $keyArray += ("$i")
-    }
-
-    $rndArray = $keyArray | Sort-Object {Get-Random}
-
-    return [string]$($rndArray)
+    return -join(@('A'[0]..'Z'[0];'a'[0]..'z'[0];'0'[0]..'9'[0])|%{[char]$_} | Sort-Object {Get-Random})
 }
 
 
@@ -73,5 +58,4 @@ Write-Host $configFilePath
 }
 
 $key = GenerateKey
-Write-Host $key
-#UpdateCurrentProjectsConfigFile $key
+UpdateCurrentProjectsConfigFile $key
