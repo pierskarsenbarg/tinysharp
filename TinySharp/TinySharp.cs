@@ -18,6 +18,11 @@ namespace TinySharp
             _key = ConfigurationManager.AppSettings["TinySharpKey"];
         }
 
+        public Tiny(string key)
+        {
+            _key = key;
+        }
+
         /// <summary>
         /// Convert ID into reversable hash
         /// </summary>
