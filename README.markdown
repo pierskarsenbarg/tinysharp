@@ -1,8 +1,7 @@
 ﻿This is an implementation of [Kyle Bragger](http://kylewritescode.com/)'s tiny code in C#.
 ﻿
 ﻿
-﻿![Build status](https://ci.appveyor.com/api/projects/status/3nmcqna2wy4q8cd5/branch/master?svg=true)](https://ci.appveyor.com/project/pierskarsenbarg/tinysharp/branch/master)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/3nmcqna2wy4q8cd5/branch/master?svg=true)](https://ci.appveyor.com/project/pierskarsenbarg/tinysharp/branch/master)
 
 ###Usage
 
