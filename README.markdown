@@ -1,12 +1,14 @@
 ﻿This is an implementation of [Kyle Bragger](http://kylewritescode.com/)'s tiny code in C#.
 ﻿
 ﻿
-﻿[![Build status](https://ci.appveyor.com/api/projects/status/rupq5t79epb8yi0i)](https://ci.appveyor.com/project/pierskarsenbarg/tinysharp)
+﻿![Build status](https://ci.appveyor.com/api/projects/status/3nmcqna2wy4q8cd5/branch/master?svg=true)](https://ci.appveyor.com/project/pierskarsenbarg/tinysharp/branch/master)
 
 
 ###Usage
 
 You can install through Nuget: `Install-Package TinySharp`
+
+Note: when you install through Nuget, it will generate a key for you and stick it in the app.config of the project you're in.
 
 ###Acknowledgements
 
